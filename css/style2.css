@@ -1,0 +1,230 @@
+@font-face {
+    font-family: NanumSquareWeb;
+    src: url(NanumSquareR.woff) format('woff')
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    min-width: 600px;
+    margin: 0 auto;
+    background-color: #a9bdf5;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'PT Sans', sans-serif;
+  }
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -0.5rem;
+    justify-content: space-between;
+    margin: 20px 0;
+    width: 20%;
+    margin-left: 42%;
+}
+.title {
+    margin: 0.5rem 0 0;
+    text-transform: uppercase;
+    font-family: 'Fredoka One', cursive;
+    font-size: 28px;
+    text-align: center;
+  }
+.wrap{
+    width: 100%;
+    margin: 0 auto;
+}
+.main{
+    width: 100%;
+    margin: 0 auto;
+    background-color: #92b0e8;
+}
+#level-counter {
+    position: relative;
+    display: inline;
+    color: black;
+    text-align: center;
+    line-height: 2em;
+    width: 200px;
+    height: 30px;
+    margin-top: 0.5rem;
+    font-size: 15px;
+} 
+#level-indicator {
+    display: inline-block;
+    width: 165px;
+    margin-left: 2px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+#level-indicator,
+.arrow {
+  height: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+#level-indicator:hover,
+.arrow:not(.disabled):hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.arrow.left {
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px 0 0 4px;
+}  
+.arrow.right {
+border-left: 1px solid rgba(255, 255, 255, 0.2);
+border-radius: 0 4px 4px 0;
+margin-left: -2px;
+}
+.arrow.left:not(.disabled):hover,
+.arrow.right:not(.disabled):hover {
+  border-color: transparent;
+  cursor: pointer;
+}
+.arrow.disabled {
+  opacity: 0.5;
+}
+.triangle {
+display: inline-block;
+width: 0;
+height: 0;
+border-top: 7px solid transparent;
+border-bottom: 7px solid transparent;
+}
+.left .triangle {
+border-right: 11px solid rgba(255, 255, 255, 0.7);;
+}
+.right .triangle {
+border-left: 11px solid rgba(255, 255, 255, 0.7);;
+}
+#pond{
+  display: flex;
+  position: relative;
+  margin-left: 25%;
+  margin-right: 50px;
+  width: 500px;
+  height: 500px;
+  padding: 1em;
+  float: left;
+  background-color: #1F5768;
+  border-radius: 20px;
+}
+#editor {
+    position: relative;
+    float: left;
+    width: 500px;
+    height: 400px;
+}
+#editor, pre{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777;
+}
+#css {
+    height: 500px;
+    width: 500px;
+    position: relative;
+    padding: 10px 10px 10px 40px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    float: left;
+}  
+.line-numbers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px 6px;
+    text-align: right;
+    background-color: #999;
+    color: #D5D5D5;
+}
+#code {
+    display: block;
+    width: calc(100% - 16px);
+    height: 24px;
+    margin-left: 16px;
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+#background {
+  z-index: 10;
+  border-radius: 0 0 0 10px;
+  background-color: #1F5768;
+}
+#pond {
+  z-index: 20; 
+} 
+button {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    background-color: #D11606;
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 440px;
+    margin-left: 440px;
+}
+
+button:active {
+outline: none;
+}
+
+button:not(.disabled):hover {
+background-color: #F12D22;
+}
+
+#popup{
+    width: 700px;
+    height: 300px;
+    z-index: 999;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    margin-left: -350px;
+    background-color: #fff;
+    border: 5px solid white;
+    border-radius: 30px;
+    text-align: center;
+
+}
+.pop_inner > .btn_close{    
+    background-color: #86bd95;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    bottom: 10px;
+    margin-left: -50px;
+    border-radius: 5px;
+    font-family: 'PT Sans', sans-serif;
+}
+.pop_inner > h5{
+    color: black;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'NanumSquareWeb';
+    margin-top: 40px;
+}
+p.text{
+    margin-top: 20px;
+    color: black;
+}
