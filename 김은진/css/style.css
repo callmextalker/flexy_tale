@@ -1,0 +1,143 @@
+@font-face {
+    font-family: NanumSquareWeb;
+    src: url(NanumSquareR.woff) format('woff')
+  }
+*{
+    margin: 0;
+    padding: 0;
+}
+.bg{
+    width: 100%;
+    height: 870px;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: black;
+    opacity: 0.2;
+    z-index: 1;
+}
+body {
+    min-width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #a9bdf5;
+    background-image: url('/image/bg-image.jpg');
+    color: rgba(255, 255, 255, 0.8);
+    font-family: 'PT Sans', sans-serif;
+}
+.wrap{
+    margin-top: 50px;
+}
+.header{
+    width: 45%;
+    min-width: 700px;
+    margin: 20px 0 0 70px;
+    background-color: #7e93cf;
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+h1.title {
+    font-family: 'Fredoka One', cursive;
+    font-size: 28px;
+    margin-left: 20px;
+    font-weight: lighter;
+} 
+p.note{
+    font-family: 'NanumSquareWeb';
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 15px;
+}
+#pond{
+    margin-top: 20px;
+    width: 45%;
+    margin-right: 70px;
+    height: 780px;
+    padding: 1em;
+    float: right;
+    background-color: #1F5768;
+    position: relative;
+    z-index: 999;
+}
+#editor{
+    position: relative;
+    float: left;
+    width: 42%;
+    height: 400px;
+    margin: 20px 0 0 70px;
+    position: relative;
+    z-index: 999;
+}
+#editor, pre{
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #777;
+}
+#css {
+    height: 479px;
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    overflow: hidden;
+    float: left;
+} 
+.line-numbers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 10px 6px;
+    text-align: right;
+    background-color: #999;
+    color: #D5D5D5;
+}
+#code {
+    display: block;
+    width: calc(100% - 16px);
+    height: 24px;
+    margin-left: 16px;
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+    overflow: auto;
+}
+#background {
+    z-index: 10;
+    border-radius: 0 0 0 10px;
+    background-color: #1F5768;
+}
+button {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    background-color: #D11606;
+    border: none;
+    border-radius: 4px;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: 50%;
+    margin-left: 89%;
+}
+
+button:active {
+outline: none;
+}
+
+button:not(.disabled):hover {
+background-color: #F12D22;
+}
