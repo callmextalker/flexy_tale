@@ -40,9 +40,14 @@
             </div>
         </div>
 
+        <div id="help">
+            <div id="">
+
+            </div>
+        </div>
         <div id="editor">
             <div id="css">
-                <div class="line-numbers">1<br>2<br>3<br>4<br>5<br>6<br>7<br>8<br>9<br>10</div>
+                <div class="line-numbers">1<br>2<br>3<br>4<br>5<div id="add-numbers"></div></div>
                 <pre id="before"></pre>
                 <p class="back_code">#background {
   display: flex;
@@ -60,4 +65,22 @@
 </body>
 </html>
 <script>
+    let numbers = 6;
+    function addLineNumbers() {
+        const LineNumbers = document.getElementById('add-numbers');
+        LineNumbers.innerHTML += numbers +'<br>';
+        return -1;
+    }
+    function countChildElement() {
+        const ele = document.getElementById('add-numbers');
+        let eleCount = ele.childElementCount;
+        console.log(eleCount);
+        return eleCount;
+    }
+    //if (줄바꿈이 들어오면)
+    //addlineNumber하고
+    //numbers에 countChildElement한다.
+    addLineNumbers();
+    numbers = 6 + countChildElement();
+    console.log(numbers);
 </script>

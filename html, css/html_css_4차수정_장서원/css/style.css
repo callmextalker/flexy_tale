@@ -114,7 +114,7 @@ p.note{
     font-size: 16px;
     outline: none;
     resize: none;
-    overflow: auto;
+    overflow: hidden;
 }
 #background {
     z-index: 10;
@@ -165,8 +165,8 @@ background-color: #F12D22;
     #board{ margin-left:34px;width: 100%; height: 100%;overflow: hidden;}
     #pond{margin-left:50px;width: 100%; height: 100%;position: relative; float: left;}
     .bg{
-        width: 100rem;
-        height: 100rem;
+        width: 100%;
+        height: 100%;
     }
     
   }
