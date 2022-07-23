@@ -115,6 +115,7 @@ p.note{
     outline: none;
     resize: none;
     overflow: hidden;
+    white-space: pre-wrap;
 }
 #background {
     z-index: 10;

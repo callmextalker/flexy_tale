@@ -65,7 +65,7 @@
 </body>
 </html>
 <script>
-    let numbers = 6;
+
     function addLineNumbers() {
         const LineNumbers = document.getElementById('add-numbers');
         LineNumbers.innerHTML += numbers +'<br>';
@@ -74,13 +74,22 @@
     function countChildElement() {
         const ele = document.getElementById('add-numbers');
         let eleCount = ele.childElementCount;
-        console.log(eleCount);
         return eleCount;
     }
-    //if (줄바꿈이 들어오면)
-    //addlineNumber하고
-    //numbers에 countChildElement한다.
-    addLineNumbers();
-    numbers = 6 + countChildElement();
-    console.log(numbers);
+//main//
+    let numbers = 6;
+
+    $("#code").on("change keyup paste", function() {
+        let height =document.getElementById('code').offsetHeight;
+        let textarea = document.getElementById('code').value;
+        if (window.event.keyCode == 13)
+        {
+            addLineNumbers();
+            numbers = 6 + countChildElement();
+            console.log(textarea);
+            console.log(numbers);
+            document.getElementById("code").style.height = height + 24 +'px';
+        }
+    });
+
 </script>
