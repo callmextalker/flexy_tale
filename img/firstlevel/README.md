@@ -7,7 +7,15 @@ firstlevel-father-100과 firstlevel-father-300는 고정되어 있고 firstlevel
 <br><br>
 어느 겨울날 눈처럼 하얀 피부, 창틀처럼 새까만 머리카락, 핏방울처럼 붉은 입술을 가진 예쁜 여자아이가 태어났어요.
 왕은 그 모습이 하얀 눈을 닮았다고 해서 아이에게 백설 공주라 이름 붙였답니다.
-(왕에게 아기 백설공주를 안겨주세요.)
+(justify-content 속성을 이용하여 왕에게 아기 백설공주를 안겨주세요.)
+
+<justify-content>
+flex-start: 요소들을 왼쪽으로 정렬합니다.
+flex-end: 요소들을 오른쪽으로 정렬합니다.
+center: 요소들을 가운데로 정렬합니다.
+space-between: 요소들 사이에 동일한 간격을 둡니다.
+space-around: 요소들 주위에 동일한 간격을 둡니다.
+
 <br><br>
 <코드>
 <br><br>
