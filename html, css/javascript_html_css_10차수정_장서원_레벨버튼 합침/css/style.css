@@ -60,6 +60,7 @@ p.note{
     z-index: 999;
     overflow: hidden;
     display: flex;
+    border-radius: 4px;
 }
 .dwarf{
     width: 230px;
@@ -176,6 +177,7 @@ p.note{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .button-color{
@@ -183,6 +185,7 @@ p.note{
     width: 100%;
     height: 500px;
     overflow: hidden;
+    border-radius: 4px;
 }
 
 button:active {
@@ -217,6 +220,9 @@ background-color: #F12D22;
     justify-content: center;
     align-items: center;
 
+}
+#next-button:not(.disabled):hover {
+    background-color: #bbc2d8;
 }
 
 /* level 버튼 */
@@ -306,6 +312,9 @@ background-color: #F12D22;
     }
     #button{
         display:none;
+    }
+    .level-nav{
+        left: 53%;
     }
   }
 
