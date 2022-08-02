@@ -61,6 +61,22 @@ p.note{
     display: flex;
 }
 
+/* level-1 */
+.father1{
+    margin-top: 145px;
+    position: relative;
+}
+.father2{
+    position: absolute;
+    top: 183px;
+    left: 45px;
+}
+.daughter{
+    position: absolute;
+    top: 400px;
+    left: 540px;
+}
+
 /* level-3 */
 
 .thirdlevel{
