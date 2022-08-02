@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexy tale - 동화가 이어질 수 있게 도와주세요!</title>
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans|Fredoka+One|Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <input type="button" id="btn1" value="justify-content" onclick="showPopup1();" />
+    <script language="javascript">
+    function showPopup1() { window.open("popup01.html", "a", "width=400, height=300, left=100, top=50"); }
+    </script>
+    
+    <input type="button" id="btn2" value="align-items" onclick="showPopup2();" />
+    <script language="javascript">
+    function showPopup2() { window.open("popup02.html", "a", "width=400, height=300, left=100, top=50"); }
+    </script>
+    
+    <input type="button" id="btn3" value="flex-direction" onclick="showPopup3();" />
+    <script language="javascript">
+    function showPopup3() { window.open("popup03.html", "a", "width=400, height=300, left=100, top=50"); }
+    </script>       
+</head>
