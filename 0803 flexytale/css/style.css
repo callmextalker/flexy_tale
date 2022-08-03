@@ -62,6 +62,7 @@ p.note{
 }
 
 /* level-1 */
+
 .father1{
     margin-top: 145px;
     position: relative;
@@ -75,6 +76,36 @@ p.note{
     position: absolute;
     top: 400px;
     left: 540px;
+}
+
+/* level-2 */
+
+.secondlevel{
+    width: 407px;
+}
+
+.face{
+    animation: img ease-in-out 0.6s infinite alternate;
+}
+
+#eye{
+    margin-left: 225px;
+    margin-top: 350px;
+}
+
+#nose{
+    margin-left: -410px;
+}
+
+#mouth{
+    margin-left: -410px;
+    margin-top: -290px;
+}
+
+#mirror{
+    width: 407px;
+    margin-left: -410px;
+    position: fixed;
 }
 
 /* level-3 */
