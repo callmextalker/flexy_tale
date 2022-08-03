@@ -240,7 +240,7 @@ p.note{
     position: absolute;
     top: 40px;
     left: 0;
-    background-color: black;
+    background-color: rgb(4, 18, 78);
     opacity: 0.2;
     z-index: 1;
 }
@@ -254,6 +254,7 @@ p.note{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    opacity: 0.8;
 }
 .background > img{
     width: 100%;
